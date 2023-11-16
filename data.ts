@@ -1,6 +1,6 @@
-import { Hall, StudentPerYear } from "./type";
+import { Hall, StudentsPerYear } from "./type";
 
-export const studentData: StudentPerYear[] = [
+export const studentData: StudentsPerYear[] = [
   {
     year: 1,
     semester:5,
@@ -161,7 +161,7 @@ export const studentData: StudentPerYear[] = [
 ];
 export const hallData: Hall[] = [
   {
-    hallno: 1,
+    hallno: "1",
     dept: "CSE",
     studentsPerBench: 1,
     studentsPerHall: 10,
@@ -169,10 +169,12 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
   {
-    hallno: 2,
+    hallno: "2",
     dept: "CSE",
     studentsPerBench: 2,
     studentsPerHall: 20,
@@ -180,10 +182,12 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
   {
-    hallno: 3,
+    hallno: "3",
     dept: "CSE",
     studentsPerBench: 1,
     studentsPerHall: 10,
@@ -191,10 +195,12 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
   {
-    hallno: 4,
+    hallno: "4",
     dept: "CSE",
     studentsPerBench: 2,
     studentsPerHall: 20,
@@ -202,10 +208,12 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
   {
-    hallno: 5,
+    hallno: "5",
     dept: "CSE",
     studentsPerBench: 1,
     studentsPerHall: 10,
@@ -213,10 +221,12 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
   {
-    hallno: 6,
+    hallno: "6",
     dept: "CSE",
     studentsPerBench: 2,
     studentsPerHall: 20,
@@ -224,7 +234,9 @@ export const hallData: Hall[] = [
     benches: {
       rows: 5,
       cols: 2,
+      extra: 0,
     },
+    isSameYearPerHallAllowed: false,
   },
 ];
 

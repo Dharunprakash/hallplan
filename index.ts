@@ -1,4 +1,4 @@
-import { Hall, StudentPerYear } from "./type";
+import { Hall, StudentsPerYear } from "./type";
 import { HallPlanPerYear, HallArrangementPlan, AttendanceSheet } from "./return";
 import { studentData, hallData } from "./data";
 import { mapYear, mapSemester } from "./data";
@@ -14,7 +14,7 @@ console.log(totalStudentsPerHall);
 if (totalStudents > totalStudentsPerHall) {
   throw new Error("total students are more than the total students per hall");
 }
-export const generateSeatingPlan = (studentData: StudentPerYear[], hallData: Hall[]) => {
+export const generateSeatingPlan = (studentData: StudentsPerYear[], hallData: Hall[]) => {
   let studentCount = 0;
   let overallStudentCount = 0;
   let studentArrayIndex = 0;
@@ -86,7 +86,7 @@ export const generateSeatingPlan = (studentData: StudentPerYear[], hallData: Hal
 
 };
 
-export const generateHallPlanForHall = (studentData: StudentPerYear[], hallData: Hall[]) => {
+export const generateHallPlanForHall = (studentData: StudentsPerYear[], hallData: Hall[]) => {
   let studentCount = 0;
   let overallStudentCount = 0;
   let hallStudentCount = 0;
