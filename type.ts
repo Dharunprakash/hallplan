@@ -14,6 +14,7 @@ export type StudentsPerYear = {
   studentData: Student[]
 }
 
+
 export type Hall = {
   hallno: string
   dept: string
@@ -25,8 +26,9 @@ export type Hall = {
     cols: number
     extra: number
   }
-  isSameYearPerHallAllowed: boolean
+  isInterchange: boolean
 }
+
 
 export type ExamTimings = {
   startTime: string
